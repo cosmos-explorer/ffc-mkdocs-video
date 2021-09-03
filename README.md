@@ -66,7 +66,7 @@ You can change this value by adding the following lines to your `mkdocs.yml`:
 
 ```yaml
 plugins:
-  - mkdocs-video:
+  - ffc-mkdocs-video:
       mark: "custom-marker"
 ```
 
@@ -90,11 +90,22 @@ You can change the style by adding the following lines to your `mkdocs.yml`:
 
 ```yaml
 plugins:
-  - mkdocs-video:
+  - ffc-mkdocs-video:
       css_style:
         weight: "100%"
         height: "22.172vw"
         ...
+```
+
+### Autoplay
+
+By default, the video autoplay is deactivated, you can enable the autoplay by adding the following lines to your `mkdocs.yml`:
+
+```yaml
+plugins:
+  - ffc-mkdocs-video:
+      auto_play: "autoplay"
+      ...
 ```
 
 ## Contributing

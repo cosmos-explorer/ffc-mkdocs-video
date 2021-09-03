@@ -6,6 +6,7 @@ from mkdocs.config import config_options
 class Plugin(mkdocs.plugins.BasePlugin):
     config_scheme = (
         ("mark", config_options.Type(str, default="type:video")),
+        ("auto_play", config_options.Type(str, default="")), # default auto_play deactivated
         ("css_style", config_options.Type(dict, default={
             "position": "relative",
             "width": "100%",
@@ -54,17 +55,13 @@ class Plugin(mkdocs.plugins.BasePlugin):
         return: str
         '''
 
+        autoplay = self.config["auto_play"]
         style = self.config["css_style"]
         style = "; ".join(
             ["{}: {}".format(str(atr), str(style[atr])) for atr in style]
         )
 
-        return "<iframe "\
-            "src=\"{}\" "\
-            "style=\"{}\" "\
-            "frameborder=\"0\" "\
-            "allowfullscreen>"\
-            "</iframe>".format(src, style)
+        return '<video controls name="media" {} style="{}"\> <source src="{}" type="video/mp4"> </video>'.format(autoplay, style, src)
 
 
     def find_marked_tags(self, content):

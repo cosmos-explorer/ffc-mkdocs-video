@@ -5,10 +5,10 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name="ffc-mkdocs-video",
-    version="0.0.8",
+    version="1.0.1",
     author="Cosmos Explorer",
     author_email="lian.yang@gmail.com",
-    url="https://github.com/soulless-viewer/mkdocs-video",
+    url="https://github.com/cosmos-explorer/ffc-mkdocs-video",
     description="",
     long_description=readme,
     long_description_content_type="text/markdown",
