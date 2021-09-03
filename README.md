@@ -1,4 +1,4 @@
-# MkDocs Video
+# ffc MkDocs Video
 
 This plugin allows you to embed videos on the documentation pages using a simple Markdown syntax.
 
