@@ -40,21 +40,6 @@ To add a video to the final documentation page, you need to use the Markdown syn
 
 *video.md*
 ```
-# Video example
-
-Lorem ipsum dolor sit amet
-
-![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
-```
-
-*\<mkdocs-url>/video*
-
-![](https://user-images.githubusercontent.com/29832584/123962612-5188db00-d9ba-11eb-9e0f-1470ca57c452.png)
-
-You can also use relative paths for videos stored together with your content
-```
-![type:video](./videos/costa_rica.mp4)
-```
 
 ## Configuration
 
