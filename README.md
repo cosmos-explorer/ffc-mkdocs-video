@@ -39,7 +39,7 @@ To add a video to the final documentation page, you need to use the Markdown syn
 ```
 
 *video.md*
-```
+
 
 ## Configuration
 
