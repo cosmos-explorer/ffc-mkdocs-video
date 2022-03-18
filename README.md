@@ -77,10 +77,12 @@ You can change the style by adding the following lines to your `mkdocs.yml`:
 plugins:
   - ffc-mkdocs-video:
       css_style:
-        weight: "100%"
+        width: "100%"
         height: "22.172vw"
         ...
 ```
+
+If embedded videos are too small on mobile browsers than adjust the height value to 100% to see if that resolves the problem.
 
 ### Autoplay
 
